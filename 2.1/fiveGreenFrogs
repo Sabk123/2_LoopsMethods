@@ -5,7 +5,7 @@ public class Main {
             int frogNum = i - 1;
             System.out.println(i + " green and speckled frogs sat on a speckled log Eating some most delicious bugs -- YUM YUM! " +
                     "\nOne jumped into the pool where it was nice and cool" +
-                    "\nThen there were " + frogNum + " green and speckled frogs.\n");
+                    "\nThen there were " + frogNum + " green and speckled frogs.\n"); // there is 0 because 0 means none.
         }
     }
 }
