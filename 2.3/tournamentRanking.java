@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Enter wins or losses!");
         char end = 'T';
-        while (end != 'F') {
+        while (end != 'F') { // This is the only while loop i can think of that can be applied
             int total = 0;
             Scanner scanner = new Scanner(System.in);
             System.out.println("Game 1 (W/L): ");
