@@ -15,7 +15,7 @@ public class Main {
             } else {
                 tries++;
                 if (tries < 3) {
-                    System.out.println("Incorrect, try again");
+                    System.out.println("Incorrect. Try again");
                     ans = scanner.next();
                     answer = ans.toLowerCase();
                 }
