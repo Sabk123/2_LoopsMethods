@@ -87,7 +87,17 @@ public class TicTacToeWeakAI {
         if (x < 1 || x > 3 || y < 1 || y > 3) {
             return false;
         }
-        return true;
+        if (x == 1 && y == 1 && a == ' ') return true;
+        if (x == 2 && y == 1 && b == ' ') return true;
+        if (x == 3 && y == 1 && c == ' ') return true;
+        if (x == 1 && y == 2 && d == ' ') return true;
+        if (x == 2 && y == 2 && e == ' ') return true;
+        if (x == 3 && y == 2 && f == ' ') return true;
+        if (x == 1 && y == 3 && g == ' ') return true;
+        if (x == 2 && y == 3 && h == ' ') return true;
+        if (x == 3 && y == 3 && i == ' ') return true;
+
+        return false; // I'm like 90% sure the starter code was wrong on this... or I did this wrong (still works though)
     }
 
     public boolean isDone() {
@@ -101,9 +111,9 @@ public class TicTacToeWeakAI {
     }
 
     public char printWinner() {
-        // returns who is in the winning condition 
-        // returns 't' if it is a tie or cat's game 
-        // top horizontal a-b-c is the win 
+        // returns who is in the winning condition
+        // returns 't' if it is a tie or cat's game
+        // top horizontal a-b-c is the win
         if (a == b && a == c && a != ' ')
             return a;
         if (d == e && e == f && d != ' ')
